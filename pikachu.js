@@ -20,11 +20,11 @@
     let y2 = pocky.y + pocky.r * 0.5;
     return collideCircleCircle(x1, y1, this.r, x2, y2, pocky.r);
   }
-
+        
   move() {
     this.y += this.vy;
     this.vy += this.gravity;
-    this.y = conspocky(this.y, 0, height - this.r);
+    this.y = constrain(this.y, 0, height - this.r);
   }
 
   show() {
