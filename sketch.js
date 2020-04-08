@@ -3,15 +3,15 @@ let uImg;
 let pImg;
 let bImg;
 let pockys = [];
-let soundClassifier;
+//let soundClassifier;
 
 
 function preload() {
-  const options = {
-    probabilityThreshold: 0.95
-  };
+  //const options = {
+    //probabilityThreshold: 0.95
+ // };
    
-  soundClassifier = ml5.soundClassifier('SpeechCommands18w', options);
+  //soundClassifier = //ml5.soundClassifier('SpeechCommands18w', options);
  
   uImg = loadImage('pikachu.png');
   pImg = loadImage('pocky.png');
@@ -25,18 +25,18 @@ function mousePressed() {
 function setup() {
   createCanvas(800, 450);
   pikachu = new  Pikachu();    
-  soundClassifier.classify(gotCommand);
+  //soundClassifier.classify(gotCommand);
 }
-function gotCommand(error, results) {
+//function gotCommand(error, results) {
   
-  if (error) {
-    console.error(error);
-}
-  console.log(results[0].label,results[0].confidence);
+ // if (error) {
+    //console.error(error);
+//}
+  //console.log(results[0].label,results[0].confidence);
   
-  if (results[0].label == 'up') {
-      pikachu.jump();
-}}
+ // if (results[0].label == 'up') {
+      //pikachu.jump();
+//}}
 
 function keyPressed() {
   if (key == ' ') {
