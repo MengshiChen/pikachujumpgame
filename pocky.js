@@ -1,5 +1,5 @@
 class Pocky {
-  
+
   constructor() {
     this.r = 75;
     this.x = width;
@@ -7,7 +7,7 @@ class Pocky {
   }
 
   move() {
-    this.x -= 16;
+    this.x -= 5 ;
   }
 
   show() {
